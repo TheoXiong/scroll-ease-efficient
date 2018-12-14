@@ -1,5 +1,5 @@
 {
-  "name": "scroll-to",
+  "name": "scroll-ease",
   "version": "1.0.0",
   "description": "A function that Roll the scrollbar to the specified position",
   "main": "index.js",
@@ -8,15 +8,16 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/TheoXiong/scroll-to.git"
+    "url": "git+https://github.com/TheoXiong/scroll-ease.git"
   },
   "keywords": [
-    "scroll"
+    "scroll",
+    "front-end"
   ],
   "author": "TheoXiong",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/TheoXiong/scroll-to/issues"
+    "url": "https://github.com/TheoXiong/scroll-ease/issues"
   },
-  "homepage": "https://github.com/TheoXiong/scroll-to#readme"
+  "homepage": "https://github.com/TheoXiong/scroll-ease#readme"
 }
