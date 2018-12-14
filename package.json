@@ -1,6 +1,6 @@
 {
   "name": "scroll-ease-efficient",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "description": "A function that smoothly scroll the scrollbar to the specified position",
   "main": "index.js",
   "scripts": {
