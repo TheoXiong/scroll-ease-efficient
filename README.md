@@ -13,8 +13,13 @@ $   npm install scroll-ease-efficient
 
 # use
 ```
+// Support CommonJs/ES6/Script 
+// 1. CommonJs 
 const { scrollTo } = require('scroll-ease-efficient')
-// or import { scrollTo } from 'scroll-ease-efficient'
+// 2. ES6
+import { scrollTo } from 'scroll-ease-efficient'
+// 3. Script
+<script type="text/javascript" src="scroll-ease-efficient/index.js"></script>
 
 // scrollable element
 let scrollEle = document.getElementById('id')
