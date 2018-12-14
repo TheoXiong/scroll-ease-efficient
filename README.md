@@ -1,5 +1,6 @@
 # **scroll-ease-efficient**
  A function that smoothly scroll the scrollbar to the specified position
+# demo
 
 # install
 ``` 

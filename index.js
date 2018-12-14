@@ -146,4 +146,7 @@ function calcFactor (distance, duration) {
     return 1 / (1 - Math.pow(2 / distance, 1 / stepTimes))
 }
 
-module.exports.scrollTo = scrollTo
+if (typeof module !== 'undefined' && module) {
+    module.exports.scrollTo = scrollTo
+}
+

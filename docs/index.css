@@ -1,0 +1,34 @@
+#wrap{
+    margin: 10px 20px;
+    border: 1px solid #aaa;
+    height: 200px;
+    overflow-y: scroll;
+    position: relative;
+}
+#inner-top,
+#inner-center,
+#inner-bottom{
+    text-align: center;
+    font-size: 18px;
+    letter-spacing: 2px;
+}
+p{
+    margin: 0;
+    padding: 30px;
+}
+#inner-top{
+    background-color: #bbb;
+}
+#inner-center{
+    background-color: #999;
+}
+#inner-bottom{
+    background-color: #ddd;
+}
+#control{
+    margin-left: 20px;
+}
+#control button{
+    height: 32px;
+    width: 64px;
+}
