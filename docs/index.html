@@ -7,9 +7,11 @@
 </head>
 <body>
     <div id="control">
-        <button onclick="control('inner-top')">top</button>
-        <button onclick="control('inner-center')">center</button>
-        <button onclick="control('inner-bottom')">bottom</button>
+        <button onclick="doScroll('inner-top')">top</button>
+        <button onclick="doScroll('inner-center')">center</button>
+        <button onclick="doScroll('inner-bottom')">bottom</button>
+        <button onclick="changeSpeed('faster')" id="faster">faster</button>
+        <button onclick="changeSpeed('slower')">slower</button>
     </div>
     <div id="wrap">
         <div id="inner-top">
@@ -30,10 +32,20 @@
     </div>
     
     <script type="text/javascript">
+        var factor = 10
         var wrap = document.getElementById('wrap')
-        function control (id) {
+
+        function doScroll (id) {
             var ele = document.getElementById(id)
-            scrollTo(wrap, ele.offsetTop, { timingFunction: 'gradually', factor: 10 })
+            scrollTo(wrap, ele.offsetTop, { timingFunction: 'gradually', factor: factor })
+        }
+
+        function changeSpeed (value) {
+            if (value === 'faster') {
+                factor = 5
+            } else if (value === 'slower') {
+                factor = 20
+            }
         }
     </script>
 </body>

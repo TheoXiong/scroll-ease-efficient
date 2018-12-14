@@ -1,6 +1,10 @@
 # **scroll-ease-efficient**
  A function that smoothly scroll the scrollbar to the specified position
+
 # demo
+https://theoxiong.github.io/scroll-ease-efficient/
+
+![demo](./scroll.gif)
 
 # install
 ``` 
@@ -30,14 +34,15 @@ scrollTo(scrollEle, 500, { timingFunction: 'liner', duration: 500})
 // specify the factor, it is just for 'gradually' mode, and duration is unuserful
 scrollTo(scrollEle, 500, { timingFunction: 'gradually', factor: 6})
 ```
+
 # description
 **function scrollTo (ele, pos, [options])**
-* ele <Dom> target scrollable element 
-* pos <Number> specified the position which scroll to
-* options <Object> 
-   * timingFunction <String> specify velocity curve of scrolling, default value is 'linear'
-   * duration <Number> specify time of scrolling, default value is 1000
-   * factor <Number> specify the factor of gradually scrolling, it is only for gradually mode, should less then 100, and more then 1
+* ele &lt;Dom&gt; target scrollable element 
+* pos &lt;Number&gt; specified the position which scroll to
+* options &lt;Object&gt; 
+   * timingFunction &lt;String&gt; specify velocity curve of scrolling, default value is 'linear'
+   * duration &lt;Number&gt; specify time of scrolling, default value is 1000
+   * factor &lt;Number&gt; specify the factor of gradually scrolling, it is only for gradually mode, should less then 100, and more then 1
 
 
 # obey

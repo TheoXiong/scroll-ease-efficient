@@ -2,8 +2,11 @@
     margin: 10px 20px;
     border: 1px solid #aaa;
     height: 200px;
+    width: 480px;
     overflow-y: scroll;
     position: relative;
+    border: 1px solid #666;
+    border-radius: 4px;
 }
 #inner-top,
 #inner-center,
@@ -29,6 +32,29 @@ p{
     margin-left: 20px;
 }
 #control button{
+    font-size: 14px;
+    font-weight: 600;
     height: 32px;
-    width: 64px;
+    width: 60px;
+    cursor: pointer;
+    border:1px solid #cad1e0;
+    border-radius: 4px;
+    background:#fff; 
+    color:#606266;
+    -webkit-user-select:none;
+}
+#control button:focus,
+#control button:hover{
+    color:rgba(90, 100, 170, 0.7);
+    border-color:rgba(90, 100, 170, 0.7);
+    outline:0;
+    border-radius:4px;
+}
+#control button:active{
+    color:rgb(90, 100, 170);
+    border-color: rgb(90, 100, 170);
+    outline:0;
+}
+#faster{
+    margin-left: 160px;
 }
