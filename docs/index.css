@@ -1,5 +1,5 @@
 #wrap{
-    margin: 10px 20px;
+    margin: 6px 20px 20px;
     border: 1px solid #aaa;
     height: 200px;
     width: 480px;
@@ -19,19 +19,24 @@ p{
     margin: 0;
     padding: 30px;
 }
+#horizontal-left,
 #inner-top{
     background-color: #bbb;
 }
+#horizontal-center,
 #inner-center{
     background-color: #999;
 }
+#horizontal-right,
 #inner-bottom{
     background-color: #ddd;
 }
-#control{
+
+.control{
     margin-left: 20px;
 }
-#control button{
+
+.control button{
     font-size: 14px;
     font-weight: 600;
     height: 32px;
@@ -43,18 +48,40 @@ p{
     color:#606266;
     -webkit-user-select:none;
 }
-#control button:focus,
-#control button:hover{
+.control button:focus,
+.control button:hover{
     color:rgba(90, 100, 170, 0.7);
     border-color:rgba(90, 100, 170, 0.7);
     outline:0;
     border-radius:4px;
 }
-#control button:active{
+.control button:active{
     color:rgb(90, 100, 170);
     border-color: rgb(90, 100, 170);
     outline:0;
 }
 #faster{
     margin-left: 160px;
+}
+
+#wrap-horizontal{
+    margin: 6px 20px 20px;
+    border: 1px solid #aaa;
+    height: 200px;
+    width: 480px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    position: relative;
+    border: 1px solid #666;
+    border-radius: 4px;
+    display: flex;
+    justify-content: flex-start;
+}
+.horizontal-inner{
+    height: 200px;
+    line-height: 200px;
+    text-align: center;
+    flex: 0 0 520px;
+    font-size: 18px;
+    letter-spacing: 2px;
 }

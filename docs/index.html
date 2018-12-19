@@ -6,7 +6,7 @@
     <link rel="stylesheet" type="text/css" href="./index.css">
 </head>
 <body>
-    <div id="control">
+    <div class="control">
         <button onclick="doScroll('inner-top')">top</button>
         <button onclick="doScroll('inner-center')">center</button>
         <button onclick="doScroll('inner-bottom')">bottom</button>
@@ -15,19 +15,42 @@
     </div>
     <div id="wrap">
         <div id="inner-top">
-            <p>conten-top</p> 
-            <p>conten-top</p>  
-            <p>conten-top</p>
+            <p>content-top</p> 
+            <p>content-top</p>  
+            <p>content-top</p>
         </div> 
         <div id="inner-center">
-            <p>conten-center</p>
-            <p>conten-center</p>
-            <p>conten-center</p>
+            <p>content-center</p>
+            <p>content-center</p>
+            <p>content-center</p>
         </div> 
         <div id="inner-bottom">
-            <p>conten-bottom</p>    
-            <p>conten-bottom</p>
-            <p>conten-bottom</p>
+            <p>content-bottom</p>    
+            <p>content-bottom</p>
+            <p>content-bottom</p>
+        </div> 
+    </div>
+
+    <div class="control">
+        <button onclick="doScrollHorizontal('horizontal-left')">left</button>
+        <button onclick="doScrollHorizontal('horizontal-center')">center</button>
+        <button onclick="doScrollHorizontal('horizontal-right')">right</button>
+    </div>
+    <div id="wrap-horizontal">
+        <div id="horizontal-left" class="horizontal-inner">
+            content-left
+        </div> 
+        <div id="horizontal-left-center" class="horizontal-inner">
+            content-center-left-center
+        </div> 
+        <div id="horizontal-center" class="horizontal-inner">
+            content-center
+        </div>
+        <div id="horizontal-center-right" class="horizontal-inner">
+            content-center-right
+        </div> 
+        <div id="horizontal-right" class="horizontal-inner">
+            content-right 
         </div> 
     </div>
     
@@ -37,7 +60,10 @@
 
         function doScroll (id) {
             var ele = document.getElementById(id)
-            scrollTo(wrap, ele.offsetTop, { timingFunction: 'gradually', factor: factor })
+            scrollTo(wrap, ele.offsetTop, {
+                timingFunction: 'gradually', 
+                factor: factor 
+            })
         }
 
         function changeSpeed (value) {
@@ -46,6 +72,15 @@
             } else if (value === 'slower') {
                 factor = 20
             }
+        }
+
+        var wrapHorizontal = document.getElementById('wrap-horizontal')
+        function doScrollHorizontal (id) {
+            var eleHorizontal = document.getElementById(id)
+            scrollTo(wrapHorizontal, eleHorizontal.offsetLeft, {
+                direction: 'horizontal',
+                timingFunction: 'gradually', 
+                factor: factor })
         }
     </script>
 </body>
